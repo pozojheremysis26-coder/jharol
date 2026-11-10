@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página Web</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e8f0fe;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #1769aa;
+            color: white;
+            padding: 25px;
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        button {
+            background: #1769aa;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mi Primera Página Web</h1>
+        <p>Bienvenidos a mi sitio web</p>
+    </header>
+
+    <main>
+        <h2>Hola, mundo</h2>
+
+        <p>
+            Esta es mi primera página creada con HTML y CSS.
+            Estoy aprendiendo a desarrollar páginas web.
+        </p>
+
+        <button onclick="saludar()">Haz clic aquí</button>
+
+        <p id="mensaje"></p>
+    </main>
+
+    <footer>
+        <p>Creado por Jheremy - 2026</p>
+    </footer>
+
+    <script>
+        function saludar() {
+            document.getElementById("mensaje").innerHTML =
+            "¡Hola! Gracias por visitar mi página web.";
+        }
+    </script>
+
+</body>
+</html>
